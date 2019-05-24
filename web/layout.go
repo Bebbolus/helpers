@@ -4,7 +4,6 @@ import (
   "html/template"
   "net/http"
   "path/filepath"
-  "log"
 )
 
 var LayoutDir string = "./assets/view/layouts"
@@ -29,6 +28,5 @@ func loadLayoutFiles() []string {
   if err != nil {
     panic(err)
   }
-  log.Println(files)
   return files
 }
